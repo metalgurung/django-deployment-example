@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {% block body_block %}  
+
+  <h1>Welcome to home page index!</h1>
+  <h2>this is index.html page showing</h2>
+  <h1>{{ text|cut:'hello' }} </h1> 
+  <!-- its being filtered by python custom method text being value and hello being args -->
+  <h2>{{ number|add:"299" }}</h2>
+
+  {% endblock %}
